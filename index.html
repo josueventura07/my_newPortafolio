@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://kit.fontawesome.com/84b3f3b50e.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header_container">
+        <nav class="nav">
+            <h1 class="logo">Josue Ventura</h1>
+            <div class="dark-mode_container">
+                <div class="dark-mode-into">
+                    <i class="dark fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                    <div class="btn_dark-mode"></div>
+                </div>
+                
+            </div>
+            <i class='bx bx-menu'></i>
+            <ul class="navbar">
+                <i class="fa-solid fa-xmark"></i>
+                <li  class="nav_list"><a href="#home">Home</a></li>
+                <li  class="nav_list"><a href="#about">About</a></li>
+                <li  class="nav_list"><a href="#skills">Skills</a></li>
+                <li  class="nav_list"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="body_home degree_home">
+            <div class="slider_container">
+                <button class="slider_prev">&#60;</button>
+                <button class="slider_next">&#62;</button>
+                <div class="slider_static">
+                    <div class="slider_traslateX" id="slider">
+                        <div class="slider_img-container">
+                            <div class="temporal" ><h1>Hola, Bienvenido a mi Blog. Soy Desarrollador Web</h1> </div>
+                        </div>
+                        <div class="slider_img-container">
+                            <div class="temporal"> <h1>Te invito a conocer un poco de mi trabajo</h1> </div>
+                        </div>
+                        <div class="slider_img-container">
+                            <div class="temporal"> <p><i class="font-size">El esfuerzo es necesario para cualquier ejercitación; 
+                                la disciplina es inevitable hasta para cultivar una planta. 
+                                Esfuerzo y disciplina deben asumirse libre y conscientemente.</i></p> </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- <ul class="slider_circle-bottom-container">
+                    <li class="slider_circle-bottom "></li>
+                    <li class="slider_circle-bottom "></li>
+                    
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="body_about degree_about">
+            <div class="about_container">
+                <div class="about_img-container">
+                    <img class="about_img" src="./img_profile/foto-perfil1.png" alt="profil_img">
+                </div>
+                <div class="about_info">
+                         <h1 class="about_info-title">About Me</h1>
+                <p class="about_details">Mi nombre es <strong>Josue Ventura</strong>, 
+                    <strong>soy dominicano</strong> y vivo en mi pais natal. Soy estudiante Universitario. Curso mis estudios en la <strong>Unversidad Utel</strong>, 
+                    certificado por <strong>Academlo</strong> como <strong>Desarrollador Web Front-End</strong> con <strong>Html, Css, JavaScript 
+                     y React</strong>, tambien llevo a cabo mis estudios de <strong>NodeJs y Postgres</strong> para certificacion de mis estudios 
+                    como programador <strong>FullStack</strong> en <strong>Academlo</strong>.</p>
+            
+                
+                <p class="about_details"><i>Poder programar y desarrollar aplicaciones que sean de utilidad 
+                    son mi pasion y un sueño hecho realidad. Una puerta al conocimiento se abre y seguira abierta
+                     con la ayuda de Dios.</i></p>
+                     <div class="about_info_social-contact">
+                        <div class="social_contact">
+                            <div class="img_box">
+                                <img class="social_img" src="./icons/lin-logo.png" alt="">
+                            </div>
+                                                   
+                            <h3><a class="links_social-contact" href="https://www.linkedin.com/in/josueventura">www.linkedin.com/in/josueventura</a></h3>
+                        </div>
+                        <div class="social_contact">
+                            <div class="img_box">
+                                <img class="social_img" src="./icons/email-logo.png" alt="">
+                            </div>
+                                
+                            <h3 class="h3-social">josueandresventura@gmail.com</h3>
+                        </div>
+                        <div class="social_contact">
+                           <div class="img_box">
+                            <img class="social_img" src="./icons/WhatsApp_logo_icon.png" alt="">
+                           </div>
+                            <h3 class="h3-social">+1 809 481-7449</h3>
+                            
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="body_skills degree_skills">
+            <div class="skills_container">
+                <div class="skills_tech-container">
+                    <!-- <div> <h2>Tecnologias</h2> </div> -->
+                    <img class="skills_tech-img" src="./tech.img/javascript-logo.png" alt="img_js">
+                    <img class="skills_tech-img" src="./tech.img/html-5-logo.png" alt="img_html">
+                    <img class="skills_tech-img" src="./tech.img/css3-logo.png" alt="img_css">
+                    <img class="skills_tech-img" src="./tech.img/react-logo.png" alt="img_react">
+                    <img class="skills_tech-img" src="./tech.img/postgresql-database-logo.png" alt="img_postgres">
+                    <img class="skills_tech-img" src="./tech.img/node-js-logo.png" alt="img_nodejs">
+                </div>
+                <div class="skills_portafolio-container">
+                    <h2 class="skills_portafolio-title">Portafolio</h2>
+                    <div class="skills_portafolio-samples">
+                        <div id="card1" class="skills_portafolio-card">
+                            <a href="https://glittering-dolphin-d3ae48.netlify.app/">
+                                <img class="skills_portafolio-img" src="./portafolio_imgs/pokedeximg.png" alt="pokedexImg">
+                            </a>
+                        </div>
+                        <div id="card2" class="skills_portafolio-card">
+                            <!-- <div class="card_info2">hola</div> -->
+                            <a href="https://exquisite-gingersnap-d7f03e.netlify.app/">
+                                <img class="skills_portafolio-img" src="./portafolio_imgs/rickandmortyimg.png" alt="pokedexImg">
+                            </a>
+                        </div>
+                        <div id="card1" class="skills_portafolio-card">
+                            <a href="https://guileless-horse-1d50fd.netlify.app/">
+                                <img class="skills_portafolio-img" src="./portafolio_imgs/ecommerce1.png" alt="pokedexImg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="body_contact degree_contact">
+            <h1 class="contact_title">Contact</h1>
+            <form name="formulario_contacto" netlify class="form_container" action="">
+                <div class="form_infoUp">
+                    <label class="from_labels" for="nombre">Nombre</label>
+                    <input name="nombre" id="name" class="form_input" placeholder="Escribe tu nombre" type="text">
+                </div>
+                <div class="form_infoUp">
+                    <label class="from_labels" for="email">Email</label>
+                    <input name="correo" id="email" class="form_input" placeholder="Escribe tu Correo" type="email">
+                </div>
+                <div class="form_text">
+                    <label class="from_labels" for="text">Gracias por visitar mi blog, dime, en que te puedo ayudar</label>
+                    <textarea class="form_text-input" placeholder="Escribeme..." name="mensaje" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button id="sendEmail" class="btn_submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer_container">
+        <div class="footer_socials">
+            <h3>Para mas Informacion</h3>
+            <i class="facebook_icon fa-brands fa-facebook"></i>
+        <div class="footer_img_box"> 
+            <img class="footer-img" src="./studies_img/academlo-img.jpg" alt="img">
+        </div>
+        <div class="footer_img_box">
+            <img class="footer-img" src="./studies_img/utel-Img.jpg" alt="img">
+        </div>   
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
