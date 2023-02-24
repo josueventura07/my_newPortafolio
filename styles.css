@@ -35,6 +35,8 @@ a {
     --bgPortafolio: linear-gradient(200deg, rgb(13, 13, 172, 2) 0.92%, rgb(0, 204, 255, 0.6) 27.96%, rgb(8, 8, 116, 0.5) 99.08%);
     --slider-color: white;
     --colorMenu: rgba(192, 59, 6);
+    --icons_color: rgba(192, 59, 6, 80%);
+
 
     /*-------Dark Mode---------*/
     --bg-navDark: rgb(8, 90, 79);
@@ -851,9 +853,21 @@ a {
     height: 100px;
     margin: auto;
     background-color: rgba(11, 11, 24, 0.5);
+    
+    
 }
 
-.footer_socials {
+.footer_animationScroll {
+    background-color: rgba(11, 11, 24, 0.5);
+    position: static;
+    top: none;
+    right: none;
+    transform: none;
+    width: 600px;
+    height: 80px;
+}
+
+/*.footer_socials {
     width: 100%;
 
     margin: auto;
@@ -880,7 +894,79 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+}*/
+/* redes sociales*/
+.socials {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
 }
+
+.social_animationScroll {
+    flex-direction: row;
+}
+
+.whatsapp {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    transition: width 1s;
+    position: relative;
+}
+
+.deploy_whatsapp {
+    width: 150px;
+    display: flex;
+   
+    transition: width 0.5s;
+    
+    
+}
+
+.whatsapp p {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--icons_color);
+    cursor: pointer;    
+}
+
+.hidden_number {
+    transform: translateX(-100%);
+    transition: transform 1s;
+}
+
+.deploy_number {
+    transform: translateX(60%);
+    transition: transform 1s;
+}
+
+
+
+
+.social_icons {
+    font-size: 30px;
+    color: var(--icons_color);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.social_icons:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
 
     
 
@@ -1017,7 +1103,28 @@ a {
 
     }
 
-    
+    .footer_animationScroll {
+        background-color: rgba(11, 11, 24, 0);
+        position: fixed;
+        top: 650px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 600px;
+        height: 80px;
+    }
+
+    .whatsapp {
+        width: 70px;
+        height: 70px;
+    }
+        
+    .social_icons {
+        font-size: 40px;
+        color: var(--icons_color);
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+        
 }
 
 @media screen and (min-width: 700px) and (max-width: 850px) {    
@@ -1048,4 +1155,7 @@ a {
     .about_details {
         font-size: 18px;
     }
+
+    
+    
 }

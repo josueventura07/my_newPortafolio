@@ -3,6 +3,10 @@ const navBar = document.querySelector('.navbar');
 const closeMenu = document.querySelector('.fa-xmark');
 const btnDarkMode = document.querySelector('.btn_dark-mode');
 const sliderTrasnlateX = document.querySelectorAll('.slider_container');
+const btnWhatsapp = document.querySelector('.whatsapp')
+const phoneN = document.querySelector('.phone')
+const footer = document.querySelector('.footer_container')
+const socials = document.querySelector('.socials')
 
 
 
@@ -135,6 +139,17 @@ navList.forEach(element => {
     });
 });
 
+window.addEventListener('scroll', (e) => {
+   
+    if(window.scrollY >= 50) {
+        footer.classList.remove('footer_animationScroll')
+        socials.classList.remove('social_animationScroll')
+    } else {
+        footer.classList.add('footer_animationScroll')
+        socials.classList.add('social_animationScroll')
+    }
+})
+
 
 
 // sliderTrasnlateX.forEach(trasnlateX => {
@@ -188,4 +203,12 @@ navList.forEach(element => {
 //     })
 
 // })
+
+// redes social
+btnWhatsapp.addEventListener('click', (e) => {
+    btnWhatsapp.classList.toggle('deploy_whatsapp')
+    phoneN.classList.toggle('deploy_number')
+    
+})
+
 
