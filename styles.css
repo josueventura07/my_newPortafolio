@@ -540,7 +540,7 @@ a {
 
 
 .fa-file-arrow-down:hover {
-animation-play-state: paused;
+/*animation-play-state: paused;*/
 text-shadow: none;
 }
 
@@ -561,6 +561,28 @@ transition: transform 0.5s ease;
 .fa-file-arrow-down p {
     font-size: 14px;
     margin-top: 10px;
+}
+
+.download_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.download_link {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(36, 109, 219);
+    text-shadow: 0px 1px 2px #000003;
+    transition: transform 0.5s ease
+}
+
+.download_link:hover {
+    transform: translateY(-2px);
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition: transform 0.5s ease
 }
 
 .social_contact {
@@ -722,7 +744,7 @@ transition: transform 0.5s ease;
     color: yellow;
     -webkit-text-stroke: rgb(255, 81, 0) 1px;
     font-size: 50px;
-
+    text-shadow: 0px 1px 2px #000003;
 }
 
 .skills_portafolio-samples{
@@ -736,7 +758,7 @@ transition: transform 0.5s ease;
     gap: 10px;
     margin: auto;
     padding: 20px;
-
+    
 }
 
 .skills_portafolio-card{
@@ -779,10 +801,11 @@ transition: transform 0.5s ease;
 }
 
 .skills_portafolio-card:hover {
-    transform: scale(3);
+    transform: scale(2);
     transition: transform 700ms ease;
     z-index: 5000;
     box-shadow: -2px 3px 8px #000004;
+    
 }
 
 .skills_portafolio-card:hover > .descrip {
