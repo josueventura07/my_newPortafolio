@@ -13,6 +13,7 @@ const socials = document.querySelector('.socials')
 // const sliders = [...document.querySelectorAll('.slider_img-container')];
 
 const sliderContainer = document.querySelector('.slider_container');
+const Body = document.querySelector('#body')
 const navList = document.querySelectorAll('.nav_list')
 const nav = document.querySelector('.nav');
 const home =document.querySelector('.home');
@@ -98,7 +99,7 @@ function darkModeSwitch() {
     bodyContact.classList.toggle('degree_contactDark')
     nav.classList.toggle('dark_mode-nav')
     navBar.classList.toggle('navbarDarkMode')
-    home.classList.toggle('bgHomeDarkMode')
+    Body.classList.toggle('bgBodyDarkMode')
     about.classList.toggle('bgAboutDarkMode')
     skills.classList.toggle('bgSkillsDarkMode')
     contact.classList.toggle('bgContactDarkMode')
