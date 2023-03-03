@@ -7,7 +7,7 @@ const btnWhatsapp = document.querySelector('.whatsapp')
 const phoneN = document.querySelector('.phone')
 const footer = document.querySelector('.footer_container')
 const socials = document.querySelector('.socials')
-
+const logo = document.querySelector('.logo')
 
 
 // const sliders = [...document.querySelectorAll('.slider_img-container')];
@@ -90,7 +90,6 @@ setInterval(() => {
     Next()
 }, 10000);
 
-
 /*------Dark Mode----------*/
 function darkModeSwitch() {
     bodyHome.classList.toggle('degree_homeDark')
@@ -142,12 +141,14 @@ navList.forEach(element => {
 
 window.addEventListener('scroll', (e) => {
    
-    if(window.scrollY >= 50) {
+    if(window.scrollY >= 80) {
         footer.classList.remove('footer_animationScroll')
         socials.classList.remove('social_animationScroll')
+        logo.classList.add('hiddenLogo')
     } else {
         footer.classList.add('footer_animationScroll')
         socials.classList.add('social_animationScroll')
+        logo.classList.remove('hiddenLogo')
     }
 })
 

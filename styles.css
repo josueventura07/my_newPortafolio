@@ -18,7 +18,7 @@ a {
 /*------------------Root-------------------------*/
 
 :root {
-    --bg-home: linear-gradient(200deg, rgb(8, 8, 116, 0.5) 0.92%, rgb(24, 130, 168) 27.96%, rgb(63, 63, 114)99.08%);
+    --bg-home: linear-gradient(200deg, rgba(10, 10, 32, 0.9) 0.92%, rgb(2, 21, 27) 47.96%, rgb(10, 10, 32)79.08%);
     --bg-about: ;
     --bg-skills: ;
     --bg-contact: ;
@@ -28,7 +28,7 @@ a {
     --over-contact: linear-gradient(180deg, rgb(177, 177, 177) 0%, rgba(27, 71, 54, 0.3) 10%, rgba(27, 71, 54, 0.3) 100%);*/
     --bg-nav: rgba(219, 95, 79, 1);
     --bg-navList-hover: wheat;
-    --bg-navBar: rgba(219, 95, 79, 0.95);
+    --bg-navBar: rgba(113, 121, 5, 0.95);
     --bg-darkMode: rgba(192, 59, 6, 80%);
     
     /* --bg-slider: linear-gradient(200deg, rgb(13, 13, 172, 0.9) 0.92%, rgb(0, 204, 255, 0.9) 27.96%, rgb(8, 8, 116, 0.9) 99.08%); */
@@ -40,8 +40,8 @@ a {
 
     /*-------Dark Mode---------*/
     --bg-navDark: ;
-    --bg-navBarDark: rgba(113, 121, 5, 0.95);
-    --bg-homeDark: linear-gradient(200deg, rgba(10, 10, 32, 0.9) 0.92%, rgb(2, 21, 27) 47.96%, rgb(10, 10, 32)79.08%);;
+    --bg-navBarDark: rgba(219, 95, 79, 0.95);
+    --bg-homeDark: linear-gradient(200deg, rgb(8, 8, 116, 0.5) 0.92%, rgb(24, 130, 168) 27.96%, rgb(63, 63, 114)99.08%);
     --bg-aboutDark: ;
     --bg-skillsDark: ;
     --bg-contactDark: ;
@@ -262,6 +262,12 @@ transition: transform 1ms ease-in-out;
     padding-left: 20px;
     color: wheat;
     -webkit-text-stroke: 1px #00000009;
+    transition: transform 1s ease;
+}
+
+.hiddenLogo {
+    transform: translateX(2000px);
+    transition: transform 1s ease;
 }
 
 .dark_mode-nav {
@@ -478,7 +484,7 @@ transition: transform 1ms ease-in-out;
     width: 100%;
     max-width: 900px;
     height: 70%;
-    padding: 50px;
+    
     
     position: relative;
     border-radius: 20px 0px 20px 0px;
@@ -1000,16 +1006,34 @@ transition: transform 0.5s ease;
     border-radius: 20px 0px 20px 0px;
     box-shadow: 0px 1px 5px 1px rgba(245, 222, 179, 20%);
     background-color: rgba(204, 204, 204, 0.01);
+    
 }
 
 .from_labels {
+    position: absolute;
+    top: 3px;
+    left: 32px;
     color: wheat;
     font-size: 18px;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.from_labels2 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    color: wheat;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.15s all ease;
 }
 
 .form_infoUp {
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-top: 20px;
 }
 
 .form_input {
@@ -1019,24 +1043,33 @@ transition: transform 0.5s ease;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 5%);
     padding-left: 10px;
+    color: white;
+}
+
+.form_input:focus + .from_labels,
+.form_input:not(:placeholder-shown) + .from_labels {
+    transform: translate(-29px, -25px);
+    border-radius: 5px;
+    transition: transform 0.15s all ease;
+}
+
+.form_text-input:focus + .from_labels2,
+.form_text-input:not(:placeholder-shown) + .from_labels2 {
+    transform: translate(-18px, -45px);
+    border-radius: 5px;
+    transition: transform 0.15s all ease;
 }
 
 .form_input::placeholder {
-    color: rgb(192, 59, 6);
-    -webkit-text-stroke: rgb(2, 2, 59) 0.3px;
-
-    height: 100%;
-    font-size: 14px;
-    padding-left: 20px;
-    padding-top: 20px;
+    color: transparent;
+    
 }
 
 .form_text {
     display: flex;
     flex-direction: column;
-
-
-    margin-top: 10px;
+    margin-top: 30px;
+    position: relative;
 }
 
 .form_text-input {
@@ -1045,16 +1078,11 @@ transition: transform 0.5s ease;
     background-color: rgba(255, 255, 255, 5%);
     padding: 20px;
     font-size: 14px;
+    color: white;
 }
 
 .form_text-input::placeholder {
-    color: rgb(248, 77, 9);
-    -webkit-text-stroke: rgb(2, 2, 59) 0.3px;
-
-    height: 100%;
-    font-size: 18px;
-
-
+    color: transparent;
 }
 
 .btn_submit {
@@ -1462,7 +1490,7 @@ transition: transform 0.5s ease;
     .decoration_container4 {
        
         top: 13%;
-        right: 20%;
+        right: 10%;
         
         width: 100%;
         max-width: 300px;
@@ -1474,7 +1502,7 @@ transition: transform 0.5s ease;
         
 }
 
-@media screen and (min-width: 700px) and (max-width: 850px) {    
+@media screen and (min-width: 700px) and (max-width: 950px) {    
     
     
     
