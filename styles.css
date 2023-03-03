@@ -102,7 +102,7 @@ transition: transform 1ms ease-in-out;
 
 .decoration_container2 {
     position: absolute;
-    top: 90%;
+    top: 85%;
     right: 5%;
     
     width: 100%;
@@ -148,7 +148,7 @@ transition: transform 1ms ease-in-out;
 
 .decoration_container3 {
     position: absolute;
-    top: 100%;
+    top: 95%;
     left: 5%;
     
     width: 100%;
